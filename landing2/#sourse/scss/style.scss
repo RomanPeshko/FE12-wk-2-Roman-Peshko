@@ -1,0 +1,108 @@
+$red: #E84545;
+$gray: #808080;
+$white: #FFFFFF;
+$ffo: 'Open Sans', sans-serif;
+$ffr: 'Raleway', sans-serif;
+$ffc: 'Cardo', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html {
+    @media (max-width: 1200px) {
+        font-size: 15px;
+    }
+    @media (max-width: 992px) {
+        font-size: 14px;
+    }
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 1200px) {
+        max-width: 970px;
+    }
+    @media (max-width: 992px) {
+        fmax-width: 750px;
+    }
+    @media (max-width: 767px) {
+        max-width: 90%;
+    }
+}
+
+
+section {
+    width: 100%;
+}
+.slick-slider {}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;
+    }
+    .slick-arrow.slick-prev {
+        left: 0;
+    }
+    .slick-arrow.slick-next {
+        right: 0;
+    }
+    .slick-dots {
+        display: flex;
+        margin-left: 13.0625rem;
+        margin-top: 3.9375rem;
+        li {
+            list-style: none;
+            margin: 0 7px;
+        }
+        button {
+            font-size: 0; 
+            width: 15px;
+            height: 15px;
+            color: white;
+            border-radius: 50%;
+            @media (max-width:450px) {
+                position: absolute;
+                top: 100%;
+            }
+        }
+    }
+}
+
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+ @import "header.scss";
+ @import "features.scss";
+ @import "works.scss";
+ @import "team.scss";
+ @import "clients.scss";
+ @import "download.scss";
+ @import "contacts.scss";
+ @import "footer.scss";
+ @import "contact.scss";

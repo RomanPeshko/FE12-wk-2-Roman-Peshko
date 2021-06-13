@@ -1,0 +1,118 @@
+.header {
+    background: url('/img/firstscreen.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(35, 34, 53, 0.95);
+    }
+}
+.header-contant {
+    padding: 2.375rem 0;
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid $gray;
+    padding-bottom: 2.375rem;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+.header-contant__logo {
+    margin: 0 15px;
+    font-family: $ffo;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: $gray;
+    display: flex;
+    margin-right: 24.875rem;
+    &::after {
+        content: 'BOX';
+        color: $white;
+        display: inline-block;
+    }
+    @media (max-width: 1200px) {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+.header-contant__nav {
+    margin: 0 15px;
+}
+.header-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.header-list {
+    margin: 0 1.84375rem;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.header-list__link {
+    font-family: $ffr;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $white;
+    padding-bottom: 0.1875rem;
+    transition: 0.3s;
+    display: inline-block;
+    &:hover {
+        transform: scale(1.3, 1.3);
+        color: $red;
+    }
+}
+.firstscreen {
+    margin: auto;
+    padding: 9.6875rem 0;
+    max-width: 53.8125rem;
+    text-align: center;
+}
+.firstscreen-title {
+    text-transform: uppercase;
+    font-family: $ffo;
+    font-weight: 800;
+    font-size: 3.4375rem;
+    color: $white;
+    margin-bottom: 2.5625rem;
+    @media (max-width: 500px){
+        font-size: 25px;
+    }
+}
+.firstscreen-discription {
+    color: $white;
+    font-size: 1.375rem;
+    margin-bottom: 5.9375rem;
+}
+.firstscreen-link {
+    display: inline-block;
+    color: $white;
+    font-family: $ffr;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    background-color: $red;
+    border: 0;
+    padding: 1.125rem 2.875rem;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.3, 1.3);
+        color: $gray;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.65);
+    }
+}

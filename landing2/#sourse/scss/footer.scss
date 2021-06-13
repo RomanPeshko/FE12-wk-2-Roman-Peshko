@@ -1,0 +1,22 @@
+.footer {
+    background-color: #313454;
+    padding: 1.875rem 0;
+}
+.footer-contant {
+    width: 20.625rem;
+    margin: auto;
+    font-family: $ffo;
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: center;
+    p{
+        color: $gray;
+    }
+    i{
+        font-style: 0.75rem;
+        color: $red;
+    }
+    span {
+        color: $white;
+    }
+}

@@ -1,0 +1,45 @@
+.section-features {
+    background-color: #FFFFFF;
+    padding: 7.4375rem 0;
+}
+.features-row {
+    max-width: 67.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+    margin: auto;
+    position: relative;
+}
+.features-row__item {
+    text-align: center;
+    margin: 37px 15px;
+    width: 18.5rem;
+    height: 11.625rem;
+}
+.features-item__title {
+    font-family: $ffr;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #2D3033;
+    margin-bottom: 1.5625rem;
+    text-transform: uppercase;
+}
+.features-item__discription {
+    font-family: $ffr;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #6C7279;
+}
+.features-item__icon {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $red;
+    width: 3.75rem;
+    height: 3.75rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

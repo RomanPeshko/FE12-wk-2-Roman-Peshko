@@ -1,0 +1,39 @@
+.section-download {
+    background-color: #FFFFFF;
+}
+.download-contant {
+    padding: 6.25rem 0;
+    margin: auto;
+    text-align: center;
+}
+.download-title {
+    font-family: $ffr;
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: #2D3033;
+    margin-bottom: 1rem;
+}
+.download-subtitle {
+    text-transform: uppercase;
+    font-family: $ffr;
+    font-weight: 800;
+    font-size: 0.8125rem;
+    color: #2D3033;
+    margin-bottom: 3.4375rem;
+}
+.download-link {
+    display: inline-block;
+    font-family: $ffr;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    color: $white;
+    padding: 1.1875rem 5.25rem;
+    background-color: $red;
+    transition: 0.3s;
+    &:hover {
+        color: $gray;
+        transform: scale(1.2, 1.2);
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.75);
+    }
+}
